@@ -14,6 +14,9 @@ let num_degraus = prompt("Quantos degraus você quer na escada?");
 let i = 1;
 
 while(i <= num_degraus) {
+    if (isNaN(Number(num_degraus)) || num_degraus == null) {
+        num_degraus = prompt("Digite um número (quantidade de degraus você quer na escada)");
+    }
     console.log(caracter.repeat(i));
     i++;
 }

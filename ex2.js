@@ -6,21 +6,20 @@
 //BONUS: Procurar na internet como fazer para gerar o numero de 1 a 100 de forma aleatoria.
 
 let num_adivinhe = Math.floor(Math.random() * 100);
-//console.log(num_adivinhe);
 let num_usuario = Number(prompt("Digite um número de 1 a 100"));
 
 while (num_adivinhe != num_usuario) {
     if (num_usuario > num_adivinhe) {
-        console.log("É um número MENOR");
-        num_usuario = Number(prompt("Digite um número de 1 a 100"));
+        num_usuario = Number(prompt("É um número MENOR. Tente Novamente."));
     }
-    if 
-    (num_usuario < num_adivinhe){
-        console.log("É um número MAIOR");
-        num_usuario = Number(prompt("Digite um número de 1 a 100"));
+    if (num_usuario < num_adivinhe){
+        num_usuario = Number(prompt("É um número MAIOR. Tente Novamente."));
+    }
+    if (isNaN(Number(num_usuario)) || num_usuario == null) {
+        num_usuario = Number(prompt("Digite um NÚMERO entre 1 a 100. Tente Novamente."));
     }
 }
 
 if (num_adivinhe == num_usuario){
-    console.log("Você acertou!");
+    console.log(`Você acertou! O número é ${num_adivinhe}!`);
 }

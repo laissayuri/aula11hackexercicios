@@ -9,14 +9,26 @@
 
 // BONUS: Perguntar qual o simbolo que ele quer como degrau
 
-let caracter = prompt("Qual caracter você quer na sua escada?");
-let num_degraus = prompt("Quantos degraus você quer na escada?");
-let i = 1;
+// let caracter = prompt("Qual caracter você quer na sua escada?");
+// let num_degraus = prompt("Quantos degraus você quer na escada?");
+// let i = 1;
 
-while(i <= num_degraus) {
-    if (isNaN(Number(num_degraus)) || num_degraus == null) {
-        num_degraus = prompt("Digite um número (quantidade de degraus você quer na escada)");
-    }
-    console.log(caracter.repeat(i));
-    i++;
+// while(i <= num_degraus) {
+//     if (isNaN(Number(num_degraus)) || num_degraus == null) {
+//         num_degraus = prompt("Digite um número (quantidade de degraus você quer na escada)");
+//     }
+//     console.log(caracter.repeat(i));
+//     i++;
+// }
+
+
+//usando for
+
+let num_degraus = Number(prompt("Quantos degraus você quer na escadinha?"));
+let caracter = prompt("Qual o símbolo do material da escadinha?");
+let escadinha = caracter;
+
+for (let i = 1; i <= num_degraus; i++ ) {
+    console.log(escadinha);
+    escadinha += caracter;
 }

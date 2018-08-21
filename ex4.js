@@ -15,18 +15,32 @@
 // .
 // .
 
+// let meninos = ["Renan", "Kleber", "Ramon", "Ademir"];
+// let meninas = ["Katia", "Lorena", "Solange", "Ludmilla"];
+// let i = 0;
+// let j = 0;
+// let meninos_com_par = 0;
+
+// while (meninos_com_par < meninos.length){
+//     console.log(`${meninos[i]} e ${meninas[j]}`);
+//     j++
+//     if (j == meninas.length){
+//         i++;
+//         j = 0;
+//         meninos_com_par++;
+//     }
+// }
+
+
+//usando for
+
 let meninos = ["Renan", "Kleber", "Ramon", "Ademir"];
 let meninas = ["Katia", "Lorena", "Solange", "Ludmilla"];
-let i = 0;
-let j = 0;
-let meninos_com_par = 0;
+let k = 0;
 
-while (meninos_com_par < meninos.length){
-    console.log(`${meninos[i]} e ${meninas[j]}`);
-    j++
-    if (j == meninas.length){
-        i++;
-        j = 0;
-        meninos_com_par++;
+for (let item1 of meninos){
+    for (let item2 of meninas){
+        console.log(`${k}: ${item1} e ${item2}`);
+        k++;
     }
 }

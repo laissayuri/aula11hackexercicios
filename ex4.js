@@ -4,7 +4,7 @@
 // let meninas = ["Katia", "Lorena", "Solange", "Ludmilla"];
 
 // Vai haver uma festa junina e os meninos e meninas
-// formarão casais para a quadrilha. Seu código deve mostrar no console todos os casais possíveis para a dança.a
+// formarão casais para a quadrilha. Seu código deve mostrar no console todos os casais possíveis para a dança.
 
 // Exemplo:
 // "Renan e Katia"
@@ -15,7 +15,7 @@
 // .
 // .
 
-let meninos = ["Renan", "Keleber", "Ramon", "Ademir"];
+let meninos = ["Renan", "Kleber", "Ramon", "Ademir"];
 let meninas = ["Katia", "Lorena", "Solange", "Ludmilla"];
 let i = 0;
 let j = 0;
@@ -26,7 +26,7 @@ while (meninos_com_par < meninos.length){
     j++
     if (j == meninas.length){
         i++;
-        j=0;
+        j = 0;
         meninos_com_par++;
     }
 }

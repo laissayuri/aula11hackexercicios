@@ -21,5 +21,5 @@ while (num_adivinhe != num_usuario) {
 }
 
 if (num_adivinhe == num_usuario){
-    console.log(`Você acertou! O número é ${num_adivinhe}!`);
+    alert(`Você acertou! O número é ${num_adivinhe}!`);
 }

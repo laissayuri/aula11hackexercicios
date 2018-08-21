@@ -68,10 +68,10 @@ else if (isNaN(Number(emprestimo)) || idade === null ) {
 }
 
 if (erro_idade == false && erro_renda == false && erro_emprestimo == false){
-    console.log("Empréstimo Permitido");
+    alert("Empréstimo Permitido");
     emprestimo_aprovado = true;
 } else {
-    console.log("Empréstimo Não Permitido");
+    alert("Empréstimo Não Permitido");
     emprestimo_aprovado = false;
 }
 
@@ -80,7 +80,7 @@ if (emprestimo_aprovado == true){
     if(num_parcelas >= 1 && num_parcelas <= 36){
         parcela = (emprestimo/num_parcelas)+(emprestimo*juros);
         total = emprestimo*(1 + (juros*num_parcelas));
-        alert(`Você terá que pagar ${num_parcelas} parcelas de ${parcela}, dando um total de ${total} reais`);
+        alert(`Você terá que pagar ${num_parcelas} parcelas de ${parcela} reais, dando um total de ${total} reais`);
     }
 }
 
